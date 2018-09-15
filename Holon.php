@@ -64,7 +64,6 @@ class Holon
 			case 'datetime':
 			case 'date':
 				return new DateTime($value);
-			break;
 			case 'mediumint':
 			case 'smallint':
 			case 'tinyint':
@@ -72,15 +71,12 @@ class Holon
 			case 'year':
 			case 'int':
 				return (integer) $value;
-			break;
 			case 'decimal':
 			case 'double':
 			case 'float':
 				return (float) $value;
-			break;
 			case 'bit':
 				return (boolean) $value;
-			break;
 			default:
 				return $value;
 		}
